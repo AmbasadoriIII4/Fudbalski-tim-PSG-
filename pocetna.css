@@ -12,17 +12,18 @@ p, body {
   color: #000000; 
 }
 
-
-.tekst-beli {
-  color: #FFFFFF;
-}
-
 h1, .naslov {
   font-family: 'Cinzel', serif;
   font-weight: bold;
   font-style: italic;
   color: #FFFFFF;
 }
+
+
+.tekst-beli {
+  color: #FFFFFF;
+}
+
 
 
 h2, h3, .podnaslov {
