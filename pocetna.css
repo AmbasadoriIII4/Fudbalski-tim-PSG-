@@ -2,10 +2,41 @@ body {
   margin: 0;
   padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@0,700;1,400;1,700&family=Inter:wght@400;700&display=swap');
 
+
+p, body {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000; 
+}
+
+h1, .naslov {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+h2, h3, .podnaslov {
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #F1110D;
+}
 #navbar {
   width: 100%;
-  background-image: url('./slike/navbar_background.png');
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #F1110D;
+
+
+  border-bottom: 6px solid #22538D;
+
   overflow: auto;
 }
 
