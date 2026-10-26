@@ -1,25 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pocetna.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pocetna.css" />
     <title>Radnički Niš</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="navbar">
-        <nav>
+      <nav>
         <!-- Napomena: pojedine reference/linkovi su ostavljeni prazni dok se ne implementiraju u kodu. Za ovo vreme, stajaće placeholder-i -->
-            <a href="./index.html"><img src="./slike/r_logo_boja.png" alt="HTML"></a> <!-- Ovaj tag vodi na početnu stranicu -->
-            <a href="#vesti">VESTI</a> <!-- Ovaj tag vodi na sekciju sa vestima -->
-            <a href="#istorija">ISTORIJA</a> <!-- Ovaj tag vodi na sekciju sa istorijom -->
-            <a href="">PRODAVNICA</a> <!-- Ovaj tag vodi na stranicu sa informacijama o prodavnici -->
-            <a href="">STRUKTURA KLUBA</a> <!-- Ovaj tag vodi na stranicu koja sadrži detaljnije informacije o strukturi kluba -->
-            <input type="text" placeholder="Pretraga..." id="pretraga"> <!-- Ovaj tag predstavlja polje za pretragu -->
-        </nav>
+        <a href="./index.html"
+          ><img src="./slike/r_logo_boja.png" alt="HTML"
+        /></a>
+        <!-- Ovaj tag vodi na početnu stranicu -->
+        <a href="#vesti">VESTI</a>
+        <!-- Ovaj tag vodi na sekciju sa vestima -->
+        <a href="#istorija">ISTORIJA</a>
+        <!-- Ovaj tag vodi na sekciju sa istorijom -->
+        <a href="">PRODAVNICA</a>
+        <!-- Ovaj tag vodi na stranicu sa informacijama o prodavnici -->
+        <a href="">STRUKTURA KLUBA</a>
+        <!-- Ovaj tag vodi na stranicu koja sadrži detaljnije informacije o strukturi kluba -->
+
+        <div class="search-container" id="searchContainer">
+          <!-- Ovaj tag predstavlja polje za pretragu -->
+          <input
+            type="search"
+            id="pretraga"
+            placeholder="Pretraži..."
+            aria-label="Pretraži sajt"
+          />
+
+          <button
+            type="button"
+            id="searchToggle"
+            aria-label="Otvori pretragu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
     </div>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
