@@ -74,3 +74,10 @@ searchInput.addEventListener("keydown", function (event) {
     }
   }
 });
+
+const scrollTopBtn = document.getElementById("nazadNaVrh");
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
