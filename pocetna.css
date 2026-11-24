@@ -698,3 +698,108 @@ main {
     align-items: flex-start;
   }
 }
+
+
+/* =========================================
+   STRANICA ISTORIJA KLUBA
+   ========================================= */
+.istorija-stranica {
+  padding: 40px 16px 80px;
+  min-height: calc(100vh - 80px);
+}
+
+.istorija-sadrzaj {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.istorija-glavni-naslov {
+  margin: 0 0 42px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.istorija-blok {
+  margin-bottom: 54px;
+}
+
+.istorija-blok:last-child {
+  margin-bottom: 0;
+}
+
+.istorija-blok h2 {
+  margin: 0 0 20px 44px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.istorija-gornji-red {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 0 44px 26px;
+}
+
+.istorija-slika {
+  flex: 0 0 58%;
+}
+
+.istorija-slika img {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+}
+
+.istorija-opis-slike {
+  flex: 1;
+  margin: 0;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #000000;
+}
+
+.istorija-tekst-kartica {
+  background: rgba(235, 232, 232, 0.88);
+  border-radius: 10px;
+  padding: 20px 26px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.istorija-tekst-kartica p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #111111;
+}
+
+.istorija-tekst-kartica p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 820px) {
+  .istorija-blok h2 {
+    margin-left: 0;
+  }
+
+  .istorija-gornji-red {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 20px;
+    gap: 16px;
+  }
+
+  .istorija-slika {
+    width: 100%;
+  }
+}
