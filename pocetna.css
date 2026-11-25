@@ -803,3 +803,393 @@ main {
     width: 100%;
   }
 }
+
+/* =========================================
+   STRANICA PRODAVNICA (ŠOP)
+   ========================================= */
+.prodavnica-stranica {
+  padding: 36px 16px 80px;
+  min-height: calc(100vh - 80px);
+}
+
+.prodavnica-sadrzaj {
+  position: relative;
+  z-index: 2;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.sop-pretraga-red {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+
+.sop-pretraga-kutija {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  background: #ffffff;
+  border: 2px solid #00064a;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.sop-pretraga-kutija input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #00064a;
+  background: transparent;
+}
+
+.sop-pretraga-btn {
+  width: 38px;
+  height: 34px;
+  border: none;
+  background: #0c4076;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sop-naslov {
+  margin: 0 0 28px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.sop-mreza {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.dres-kartica {
+  background: rgba(244, 244, 245, 0.96);
+  border-radius: 6px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.dres-slika-okvir {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 14px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.dres-slika-okvir img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.dres-kartica h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.dres-podnaslov {
+  margin: 0 0 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.dres-linija {
+  height: 2px;
+  background: #00064a;
+  margin-bottom: 12px;
+}
+
+.dres-dno {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.dres-cena {
+  font-size: 16px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.btn-kupi {
+  background: #00064a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-kupi:hover {
+  opacity: 0.88;
+}
+
+/* Detaljan prikaz dresa (Frame 6) */
+.dres-detalj-okvir {
+  background: rgba(244, 244, 245, 0.96);
+  border-radius: 6px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.dres-detalj-galerija {
+  flex: 0 0 52%;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.dres-minijature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.minijatura-btn {
+  width: 56px;
+  height: 68px;
+  padding: 3px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.minijatura-btn.aktivna {
+  border-color: #00064a;
+}
+
+.minijatura-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dres-glavna-slika {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 20px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dres-glavna-slika img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.dres-detalj-opcije {
+  flex: 1;
+}
+
+.dres-detalj-opcije h2 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.opcija-grupa {
+  margin-bottom: 18px;
+}
+
+.opcija-grupa label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.opcija-red {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.opcija-btn {
+  background: #d8d8da;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.opcija-btn.aktivna {
+  background: #00064a;
+  color: #ffffff;
+}
+
+.detalj-dno-red {
+  margin-top: 22px;
+}
+
+.detalj-cena {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  color: #000000;
+}
+
+.btn-dodaj-korpu {
+  width: 100%;
+  background: #00064a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 11px 18px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.korpa-poruka {
+  margin: 10px 0 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0c4076;
+}
+
+/* =========================================
+   STRANICA STRUKTURA KLUBA
+   ========================================= */
+.struktura-stranica {
+  padding: 40px 16px 80px;
+  min-height: calc(100vh - 80px);
+}
+
+.struktura-sadrzaj {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.struktura-glavni-naslov {
+  margin: 0 0 28px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.struktura-kartica {
+  background: rgba(246, 246, 247, 0.95);
+  border-radius: 4px;
+  padding: 32px 38px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.struktura-sekcija h2 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.osoba-red {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.osoba-slika {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 148px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.osoba-info h3 {
+  margin: 2px 0 4px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.osoba-uloga {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.osoba-opis {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #1a1a1a;
+}
+
+.lista-grupa h4 {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+  font-weight: 800;
+  text-decoration: underline;
+  color: #000000;
+}
+
+.lista-grupa p {
+  margin: 0 0 6px;
+  font-size: 13.5px;
+  color: #1a1a1a;
+}
+
+.struktura-razdelnik {
+  border: none;
+  border-top: 1.5px solid #eb6363;
+  margin: 28px 0;
+}
+
+@media (max-width: 820px) {
+  .sop-mreza {
+    grid-template-columns: 1fr;
+  }
+
+  .dres-detalj-okvir,
+  .osoba-red {
+    flex-direction: column;
+  }
+
+  .osoba-slika {
+    width: 100%;
+    height: 200px;
+  }
+}
