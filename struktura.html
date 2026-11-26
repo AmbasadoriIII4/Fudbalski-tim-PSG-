@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pocetna.css" />
+    <title>Struktura kluba - Radnički Niš</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <nav>
+        <a href="./index.html"
+          ><img src="./slike/r_logo_boja.png" alt="FK Radnički Niš"
+        /></a>
+        <a href="./vesti.html">VESTI</a>
+        <a href="./istorija.html">ISTORIJA</a>
+        <a href="./prodavnica.html">PRODAVNICA</a>
+        <a href="./struktura.html">STRUKTURA KLUBA</a>
+
+        <div class="search-container" id="searchContainer">
+          <input
+            type="search"
+            id="pretraga"
+            placeholder="Pretraži..."
+            aria-label="Pretraži sajt"
+          />
+          <button
+            type="button"
+            id="searchToggle"
+            aria-label="Otvori pretragu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <main class="struktura-stranica">
+      <div class="pozadina-trake pozadina-trake-vesti" aria-hidden="true">
+        <span class="traka traka-crvena-1"></span>
+        <span class="traka traka-crvena-2"></span>
+        <span class="traka traka-plava-1"></span>
+        <span class="traka traka-plava-2"></span>
+      </div>
+
+      <div class="struktura-sadrzaj">
+        <h1 class="struktura-glavni-naslov">Struktura kluba</h1>
+
+        <div class="struktura-kartica">
+          <!-- Trener i stručni štab -->
+          <section class="struktura-sekcija">
+            <h2>Trener i stručni štab</h2>
+
+            <div class="osoba-red">
+              <img
+                src="./slike/strucni_stab/Rectangle 142.png"
+                alt="Nikola Drinčić"
+                class="osoba-slika"
+              />
+              <div class="osoba-info">
+                <h3>Nikola Drinčić</h3>
+                <p class="osoba-uloga">Šef stručnog štaba</p>
+                <p class="osoba-opis">
+                  Vodi prvi tim Radničkog i odgovoran je za pripremu ekipe,
+                  taktiku i ostvarivanje sportskih rezultata na utakmicama.
+                </p>
+              </div>
+            </div>
+
+            <div class="lista-grupa">
+              <h4>Ostali članovi stručnog štaba:</h4>
+              <p><strong>Dejan Babić, Vladimir Đorđević</strong> - pomoćni treneri</p>
+              <p><strong>Filip Anđelković</strong> - trener golmana</p>
+              <p><strong>Ivan Tomić</strong> - kondicioni trener</p>
+            </div>
+          </section>
+
+          <hr class="struktura-razdelnik" />
+
+          <!-- Rukovodstvo kluba -->
+          <section class="struktura-sekcija">
+            <h2>Rukovodstvo kluba kojeg sada kao ima od jednom kada su svi otiškli za Bahame ili Brazil ili nešto slično ali okej</h2>
+
+            <div class="osoba-red">
+              <img
+                src="./slike/strucni_stab/Rectangle 145.png"
+                alt="Vidosav Vitko Radomirović"
+                class="osoba-slika"
+              />
+              <div class="osoba-info">
+                <h3>Vidosav Vitko Radomirović</h3>
+                <p class="osoba-uloga">Predsednik Upravnog odbora</p>
+                <p class="osoba-opis">
+                  Predvodi novo rukovodstvo kluba i odgovoran je za strateško
+                  usmeravanje i razvoj Radničkog.
+                </p>
+              </div>
+            </div>
+
+            <div class="osoba-red">
+              <img
+                src="./slike/strucni_stab/Rectangle 146.png"
+                alt="Dejan Propadalo"
+                class="osoba-slika"
+              />
+              <div class="osoba-info">
+                <h3>Dejan Propadalo</h3>
+                <p class="osoba-uloga">Direktor kluba</p>
+                <p class="osoba-opis">
+                  Zadužen za organizaciju poslovanja, administrativne aktivnosti i
+                  funkcionisanje fudbalskog kluba.
+                </p>
+              </div>
+            </div>
+
+            <div class="osoba-red">
+              <img
+                src="./slike/strucni_stab/Rectangle 147.png"
+                alt="Nataša Nikolić"
+                class="osoba-slika"
+              />
+              <div class="osoba-info">
+                <h3>Nataša Nikolić</h3>
+                <p class="osoba-uloga">Predsednica Skupštine kluba</p>
+                <p class="osoba-opis">
+                  Učestvuje u radu Skupštine i donošenju važnih odluka za
+                  budućnost.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <hr class="struktura-razdelnik" />
+
+          <!-- Medicinski tim -->
+          <section class="struktura-sekcija">
+            <h2>Medicinski tim</h2>
+            <div class="lista-grupa lista-grupa-bez-naslova">
+              <p><strong>Nikola Jerkan</strong> - Klupski lekar</p>
+              <p><strong>Marko Stanković</strong> - Fizioterapeut</p>
+            </div>
+          </section>
+
+          <hr class="struktura-razdelnik" />
+
+          <!-- Ostali članovi kluba -->
+          <section class="struktura-sekcija">
+            <h2>Ostali članovi kluba</h2>
+            <div class="lista-grupa lista-grupa-bez-naslova">
+              <p><strong>Saša Mrkić</strong> - Direktor omladinske škole</p>
+              <p><strong>Milan Cvetanović</strong> - Sekretar stručnog štaba</p>
+              <p><strong>Srđan Mitić</strong> - Ekonomista kluba</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="glavni-futer">
+      <div class="futer-sadrzaj">
+        <div class="futer-info">
+          <h4><span class="futer-tacka"></span> FK RADNIČKI NIŠ</h4>
+          <div class="futer-linija"></div>
+          <p>Stadion Čair, 9. brigade bb,</p>
+          <p>18000 Niš, Srbija</p>
+          <p>+381 18 52 72 59</p>
+          <p>prsluzba@fkradnickinis.rs</p>
+        </div>
+
+        <div class="futer-sponzori">
+          <span class="sponzor-mts">mts</span>
+          <span class="sponzor-maxbet">MAXBET</span>
+          <span class="sponzor-masita">MASITA</span>
+        </div>
+
+        <button
+          type="button"
+          id="nazadNaVrh"
+          class="futer-vrh-btn"
+          title="Nazad na vrh"
+          aria-label="Nazad na vrh"
+        >
+          &#8593;
+        </button>
+      </div>
+
+      <div class="futer-dno">
+        <p>2026 &copy; ETS Nikola Tesla</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

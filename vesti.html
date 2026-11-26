@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pocetna.css" />
+    <title>Vesti - Radnički Niš</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <nav>
+        <a href="./index.html"
+          ><img src="./slike/r_logo_boja.png" alt="FK Radnički Niš"
+        /></a>
+        <a href="./vesti.html">VESTI</a>
+        <a href="./istorija.html">ISTORIJA</a>
+        <a href="./prodavnica.html">PRODAVNICA</a>
+        <a href="./struktura.html">STRUKTURA KLUBA</a>
+
+        <div class="search-container" id="searchContainer">
+          <input
+            type="search"
+            id="pretraga"
+            placeholder="Pretraži..."
+            aria-label="Pretraži sajt"
+          />
+
+          <button
+            type="button"
+            id="searchToggle"
+            aria-label="Otvori pretragu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <main class="vesti-stranica">
+      <div class="pozadina-trake pozadina-trake-vesti" aria-hidden="true">
+        <span class="traka traka-crvena-1"></span>
+        <span class="traka traka-crvena-2"></span>
+        <span class="traka traka-plava-1"></span>
+        <span class="traka traka-plava-2"></span>
+      </div>
+
+      <div class="vesti-stranica-sadrzaj">
+        <!-- Istaknuta najnovija vest -->
+        <article class="istaknuta-vest">
+          <div class="istaknuta-vest-slika">
+            <img
+              src="./slike/vest_glavna.png"
+              alt="Kup Srbije: Radnički spreman za Dubočicu"
+            />
+          </div>
+          <div class="istaknuta-vest-tekst">
+            <div>
+              <h2>Kup Srbije: Radnički spreman za Dubočicu</h2>
+              <div class="vest-linija"></div>
+              <p>
+                Fudbalski klub Radnički gostovaće u šesnaestini finala Kupa
+                Srbije ekipi Dubočice. O tome kakva su očekivanja pred ovaj
+                važan kup duel govorili su šef stručnog štaba i prvotimci
+                niškog tima na konferenciji za medije na stadionu Čair.
+              </p>
+            </div>
+            <time datetime="2026-11-17">novembar 17, 2026</time>
+          </div>
+        </article>
+
+        <!-- Lista ostalih vesti -->
+        <section class="vesti-lista-okvir">
+          <article class="vest-stavka">
+            <div class="vest-stavka-slika">
+              <img
+                src="./slike/background_2.webp"
+                alt="Petrović strelac za Srbiju, Izderić u dresu Austrije!"
+              />
+            </div>
+            <div class="vest-stavka-tekst">
+              <div>
+                <h3>Petrović strelac za Srbiju, Izderić u dresu Austrije!</h3>
+                <div class="vest-linija"></div>
+                <p>
+                  Fudbaleri Radničkog Đorđe Petrović i Luka Izderić zadužili su
+                  tokom novembarske reprezentativne pauze dresove Srbije,
+                  odnosno Austrije, i zabeležili zapažene nastupe na
+                  međunarodnoj sceni.
+                </p>
+              </div>
+              <div class="vest-stavka-dno">
+                <a href="#" class="btn-opsirnije">Opsirnije</a>
+                <time datetime="2026-11-12">novembar 12, 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="vest-stavka">
+            <div class="vest-stavka-slika">
+              <img
+                src="./slike/background_2.webp"
+                alt="Saša Caki Stojanović novi sportski direktor Radničkog"
+              />
+            </div>
+            <div class="vest-stavka-tekst">
+              <div>
+                <h3>Saša Caki Stojanović novi sportski direktor Radničkog</h3>
+                <div class="vest-linija"></div>
+                <p>
+                  Saša Caki Stojanović, nekadašnji igrač i kapiten Fudbalskog
+                  kluba Radnički, zvanično je imenovan za novog sportskog
+                  direktora kluba sa stadiona Čair.
+                </p>
+              </div>
+              <div class="vest-stavka-dno">
+                <a href="#" class="btn-opsirnije">Opsirnije</a>
+                <time datetime="2026-11-10">novembar 10, 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="vest-stavka">
+            <div class="vest-stavka-slika">
+              <img
+                src="./slike/background_2.webp"
+                alt="Vidosav Vitko Radomirović novi predsednik Radničkog"
+              />
+            </div>
+            <div class="vest-stavka-tekst">
+              <div>
+                <h3>Vidosav Vitko Radomirović novi predsednik Radničkog</h3>
+                <div class="vest-linija"></div>
+                <p>
+                  Na vanrednoj sednici Skupštine fudbalskog kluba Radnički
+                  izabran je novi Upravni odbor. Za novog predsednika Upravnog
+                  odbora Skupština je izabrala Vidosava Vitka Radomirovića.
+                </p>
+              </div>
+              <div class="vest-stavka-dno">
+                <a href="#" class="btn-opsirnije">Opsirnije</a>
+                <time datetime="2026-11-09">novembar 9, 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="vest-stavka">
+            <div class="vest-stavka-slika">
+              <img
+                src="./slike/background_2.webp"
+                alt="Poraz od Čukaričkog"
+              />
+            </div>
+            <div class="vest-stavka-tekst">
+              <div>
+                <h3>Poraz od Čukaričkog</h3>
+                <div class="vest-linija"></div>
+                <p>
+                  Fudbaleri Radničkog poraženi su od ekipe Čukaričkog u
+                  petnaestom kolu Superlige Srbije. Utakmica na Banovom brdu
+                  završena je rezultatom 2:1 nakon preokreta domaćina.
+                </p>
+              </div>
+              <div class="vest-stavka-dno">
+                <a href="#" class="btn-opsirnije">Opsirnije</a>
+                <time datetime="2026-11-07">novembar 7, 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="vest-stavka">
+            <div class="vest-stavka-slika">
+              <img
+                src="./slike/background_2.webp"
+                alt="U ponedeljak svi na Čair, igra Radnički!"
+              />
+            </div>
+            <div class="vest-stavka-tekst">
+              <div>
+                <h3>U ponedeljak svi na „Čair“, igra Radnički!</h3>
+                <div class="vest-linija"></div>
+                <p>
+                  Fudbalski klub Radnički dočekaće u 14. kolu Superlige Srbije
+                  ekipu Železničara. Očekivanja od narednog meča izneli su šef
+                  stručnog štaba i prvotimci niškog tima.
+                </p>
+              </div>
+              <div class="vest-stavka-dno">
+                <a href="#" class="btn-opsirnije">Opsirnije</a>
+                <time datetime="2026-10-31">oktobar 31, 2026</time>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Futer -->
+    <footer class="glavni-futer">
+      <div class="futer-sadrzaj">
+        <div class="futer-info">
+          <h4><span class="futer-tacka"></span> FK RADNIČKI NIŠ</h4>
+          <div class="futer-linija"></div>
+          <p>Stadion Čair, 9. brigade bb,</p>
+          <p>18000 Niš, Srbija</p>
+          <p>+381 18 52 72 59</p>
+          <p>prsluzba@fkradnickinis.rs</p>
+        </div>
+
+        <div class="futer-sponzori">
+          <span class="sponzor-mts">mts</span>
+          <span class="sponzor-maxbet">MAXBET</span>
+          <span class="sponzor-masita">MASITA</span>
+        </div>
+
+        <button
+          type="button"
+          id="nazadNaVrh"
+          class="futer-vrh-btn"
+          title="Nazad na vrh"
+          aria-label="Nazad na vrh"
+        >
+          &#8593;
+        </button>
+      </div>
+
+      <div class="futer-dno">
+        <p>2026 &copy; ETS Nikola Tesla</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

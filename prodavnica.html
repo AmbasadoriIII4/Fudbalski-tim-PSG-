@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pocetna.css" />
+    <title>Prodavnica - Radnički Niš</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <nav>
+        <a href="./index.html"
+          ><img src="./slike/r_logo_boja.png" alt="FK Radnički Niš"
+        /></a>
+        <a href="./vesti.html">VESTI</a>
+        <a href="./istorija.html">ISTORIJA</a>
+        <a href="./prodavnica.html">PRODAVNICA</a>
+        <a href="./struktura.html">STRUKTURA KLUBA</a>
+
+        <div class="search-container" id="searchContainer">
+          <input
+            type="search"
+            id="pretraga"
+            placeholder="Pretraži..."
+            aria-label="Pretraži sajt"
+          />
+          <button
+            type="button"
+            id="searchToggle"
+            aria-label="Otvori pretragu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m16 16 4 4"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <main class="prodavnica-stranica">
+      <div class="pozadina-trake pozadina-trake-vesti" aria-hidden="true">
+        <span class="traka traka-crvena-1"></span>
+        <span class="traka traka-crvena-2"></span>
+        <span class="traka traka-plava-1"></span>
+        <span class="traka traka-plava-2"></span>
+      </div>
+
+      <div class="prodavnica-sadrzaj">
+        <div class="sop-pretraga-red">
+          <div class="sop-pretraga-kutija">
+            <input
+              type="search"
+              id="sopPretraga"
+              placeholder="PRETRAGA..."
+              aria-label="Pretraga prodavnice"
+            />
+            <button type="button" class="sop-pretraga-btn" aria-label="Traži">
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              >
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m16 16 4 4"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <h1 class="sop-naslov">Šop</h1>
+
+        <section class="sop-mreza" id="sopMreza">
+          <article
+            class="dres-kartica"
+            data-naziv="Domaći dres"
+            data-pun-naziv="FK Radnički Niš 26/27 - Domaći dres"
+            data-cena="2.999 RSD"
+            data-slika="./slike/shopee/domaci_dres.png"
+          >
+            <div class="dres-slika-okvir">
+              <img src="./slike/shopee/domaci_dres.png" alt="Domaći dres" />
+            </div>
+            <h3>Domaći dres</h3>
+            <p class="dres-podnaslov">FK Radnički 26/27 - Domaći dres</p>
+            <div class="dres-linija"></div>
+            <div class="dres-dno">
+              <span class="dres-cena">2.999 RSD</span>
+              <button type="button" class="btn-kupi">
+                &#128722; KUPI
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="dres-kartica"
+            data-naziv="Gostujući dres"
+            data-pun-naziv="FK Radnički Niš 26/27 - Gostujući dres"
+            data-cena="2.999 RSD"
+            data-slika="./slike/shopee/gostujuci_dres.jpg"
+          >
+            <div class="dres-slika-okvir">
+              <img src="./slike/shopee/gostujuci_dres.jpg" alt="Gostujući dres" />
+            </div>
+            <h3>Gostujući dres</h3>
+            <p class="dres-podnaslov">FK Radnički 26/27 - Gostujući dres</p>
+            <div class="dres-linija"></div>
+            <div class="dres-dno">
+              <span class="dres-cena">2.999 RSD</span>
+              <button type="button" class="btn-kupi">
+                &#128722; KUPI
+              </button>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- Detaljan prikaz odabranog artikla (Frame 6) -->
+        <section class="dres-detalj-okvir" id="dresDetalj">
+          <div class="dres-detalj-galerija">
+            <div class="dres-minijature">
+              <button
+                type="button"
+                class="minijatura-btn aktivna"
+                data-img="./slike/dres_treci_veliki.png"
+              >
+                <img src="./slike/shopee/Rectangle 130.png" alt="Pogled 1" />
+              </button>
+              <button
+                type="button"
+                class="minijatura-btn"
+                data-img="./slike/dres_treci.png"
+              >
+                <img src="./slike/shopee/Rectangle 131.png" alt="Pogled 2" />
+              </button>
+              <button
+                type="button"
+                class="minijatura-btn"
+                data-img="./slike/dres_domaci.png"
+              >
+                <img src="./slike/shopee/Rectangle 132.png" alt="Pogled 3" />
+              </button>
+            </div>
+
+            <div class="dres-glavna-slika">
+              <img
+                id="detaljGlavnaSlika"
+                src="./slike/dres_treci_veliki.png"
+                alt="FK Radnički Niš 26/27 - Treći dres"
+              />
+            </div>
+          </div>
+
+          <div class="dres-detalj-opcije">
+            <h2 id="detaljNaziv">FK Radnički Niš 26/27 - Treći dres</h2>
+
+            <div class="opcija-grupa">
+              <label>Pol/Uzrast:</label>
+              <div class="opcija-red" id="polOpcije">
+                <button type="button" class="opcija-btn aktivna">MUŠKO</button>
+                <button type="button" class="opcija-btn">ŽENSKO</button>
+                <button type="button" class="opcija-btn">DEČIJE</button>
+              </div>
+            </div>
+
+            <div class="opcija-grupa">
+              <label>Veličina:</label>
+              <div class="opcija-red" id="velicinaOpcije">
+                <button type="button" class="opcija-btn velicina-btn">XS</button>
+                <button type="button" class="opcija-btn velicina-btn">S</button>
+                <button type="button" class="opcija-btn velicina-btn aktivna">
+                  M
+                </button>
+                <button type="button" class="opcija-btn velicina-btn">L</button>
+                <button type="button" class="opcija-btn velicina-btn">XL</button>
+              </div>
+            </div>
+
+            <div class="detalj-dno-red">
+              <div class="detalj-cena" id="detaljCena">Cena: 3.499 RSD</div>
+              <button type="button" class="btn-dodaj-korpu" id="dodajUKorpu">
+                Dodaj u korpu
+              </button>
+            </div>
+            <p class="korpa-poruka" id="korpaPoruka" aria-live="polite"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="glavni-futer">
+      <div class="futer-sadrzaj">
+        <div class="futer-info">
+          <h4><span class="futer-tacka"></span> FK RADNIČKI NIŠ</h4>
+          <div class="futer-linija"></div>
+          <p>Stadion Čair, 9. brigade bb,</p>
+          <p>18000 Niš, Srbija</p>
+          <p>+381 18 52 72 59</p>
+          <p>prsluzba@fkradnickinis.rs</p>
+        </div>
+
+        <div class="futer-sponzori">
+          <span class="sponzor-mts">mts</span>
+          <span class="sponzor-maxbet">MAXBET</span>
+          <span class="sponzor-masita">MASITA</span>
+        </div>
+
+        <button
+          type="button"
+          id="nazadNaVrh"
+          class="futer-vrh-btn"
+          title="Nazad na vrh"
+          aria-label="Nazad na vrh"
+        >
+          &#8593;
+        </button>
+      </div>
+
+      <div class="futer-dno">
+        <p>2026 &copy; ETS Nikola Tesla</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
